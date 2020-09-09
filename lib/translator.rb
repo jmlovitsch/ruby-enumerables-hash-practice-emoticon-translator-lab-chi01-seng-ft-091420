@@ -13,7 +13,7 @@ def load_library(file_path)
   library
 end
 
-def get_english_meaning (file_path, japanese_emoticon)
+def get_english_meaning (file_path = './lib/emoticons.yml', japanese_emoticon)
   sorry_message = "Sorry, that emoticon was not found"
   library = load_library(file_path)
   library.each do |emotion, emoticon_hash|
