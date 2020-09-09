@@ -33,6 +33,7 @@ def get_japanese_emoticon(file_path = './lib/emoticons.yml', english_emoticon)
       if emoji == english_emoticon
         return library[emotion][:japanese]
       end
+      return sorry_message
     end
   end
 end
