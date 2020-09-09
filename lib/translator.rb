@@ -31,7 +31,7 @@ def get_japanese_emoticon(file_path = './lib/emoticons.yml', english_emoticon)
     emoticon_hash.each do |language, emoji|
       if emoji == english_emoticon
         binding.pry
-        return library[emotion][:japanese]
+        library[emotion][:japanese] 
       end
     end
   end
