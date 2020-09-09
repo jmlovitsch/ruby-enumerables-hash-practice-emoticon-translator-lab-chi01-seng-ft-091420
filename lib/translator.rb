@@ -33,7 +33,7 @@ def get_japanese_emoticon(file_path = './lib/emoticons.yml', english_emoticon)
       if emoji == english_emoticon
         library[emotion][:japanese]
       else
-        p library[emotion][:japanese]
+       library[emotion][:japanese]
       end
     end
   end
