@@ -32,6 +32,7 @@ def get_japanese_emoticon(file_path = './lib/emoticons.yml', english_emoticon)
   library.each do |emotion, emoticon_hash|
     emoticon_hash.each do |language, emoji|
       if emoji == english_emoticon
+        binding.pry
         return :japanese[emoji]
       end
     end
