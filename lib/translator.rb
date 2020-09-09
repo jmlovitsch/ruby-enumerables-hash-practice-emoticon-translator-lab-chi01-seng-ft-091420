@@ -27,4 +27,18 @@ def get_english_meaning (file_path, japanese_emoticon)
   end
 end
 
-def get_japanese_emoticon ()
+def get_japanese_emoticon(file_path = './lib/emoticons.yml', english_emoticon)
+  library = load_library(file_path)
+  library.each do |emotion, emoticon_hash|
+    emoticon_hash.each do |language, emoji|
+      if emoji == english_emoticon
+        return [:japanese]emoji
+      end
+    end
+  end
+end
+        
+        
+        
+        
+        
