@@ -19,9 +19,9 @@ def get_english_meaning (file_path = './lib/emoticons.yml', japanese_emoticon)
   library.each do |emotion, emoticon_hash|
     emoticon_hash.each do |language, emoji|
       if emoji == japanese_emoticon
-        return emotion
+        emotion
       else
-        return sorry_message
+        sorry_message
       end
     end
   end
